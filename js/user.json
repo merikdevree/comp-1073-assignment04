@@ -1,0 +1,22 @@
+{
+    "response": {
+        "players": [
+            {
+                "steamid": "76561198156428778",
+                "communityvisibilitystate": 3,
+                "profilestate": 1,
+                "personaname": "RataTat",
+                "profileurl": "https://steamcommunity.com/profiles/76561198156428778/",
+                "avatar": "https://avatars.steamstatic.com/b9cf8500676f15e0b6b2093be8a250ea8b44a75c.jpg",
+                "avatarmedium": "https://avatars.steamstatic.com/b9cf8500676f15e0b6b2093be8a250ea8b44a75c_medium.jpg",
+                "avatarfull": "https://avatars.steamstatic.com/b9cf8500676f15e0b6b2093be8a250ea8b44a75c_full.jpg",
+                "avatarhash": "b9cf8500676f15e0b6b2093be8a250ea8b44a75c",
+                "lastlogoff": 1702021497,
+                "personastate": 0,
+                "primaryclanid": "103582791429521408",
+                "timecreated": 1411916583,
+                "personastateflags": 0
+            }
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Steam Games Getter Thing</title>
+        <script src="./js/api.js" defer></script>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Steam Games Getter Thing</h1>
+            </div>
+            <div class="main">
+                <div class="form">
+                    <form>
+                        <label for="steamid">Steam ID</label>
+                        <input type="text" name="steamid" id="steamid" placeholder="Enter a valid Steam ID" />
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
+                <div class="user-profile">
+                    <div class="user-profile-picture"><img src="" alt="" /></div>
+                    <div class="user-profile-info">
+                        <h2></h2>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="games">
+                    <ul id="games"></ul>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Made by <a href=""></a></p>
+            </div>
+        </div>
+    </body>
+</html>
