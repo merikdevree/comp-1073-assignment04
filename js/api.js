@@ -1,4 +1,4 @@
-const key = "739D1FCA95D6DF76CA2B014DA54ECEB1"
+const key = "B04B7E5377FEEC37AE1A25356E31D347"
 
 const form = document.querySelector(".form");
 const username = document.getElementById("username");
