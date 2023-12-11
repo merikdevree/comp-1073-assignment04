@@ -1,36 +1,30 @@
-const key = "B04B7E5377FEEC37AE1A25356E31D347"
+// constants for text output
+const joke = document.getElementById('joke');
+const jokeBtn = document.querySelector('button');
+const studentNumber = document.getElementById('studentNumber');
 
-const form = document.querySelector(".form");
-const username = document.getElementById("username");
-const avatar = document.getElementById("avatar");
+jokeBtn.addEventListener('click', generateJoke);
 
+function generateJoke() {
+    // set header for the API
+    const setHeader = {
+        headers: {
+            Accept: 'application/json'
+        }
+    }
 
-async function GetPlayerSummaries(steamid) {
-    const url = `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${key}&steamids=${steamid}`;
-    console.log(url);
-    const request = new Request(url);
-    console.log(request);
-    const response = await fetch(request);
-    console.log(response);
-    const data = await response.json();
-    console.log(data);
-    return data;
-}
-
-async function getRecentlyPlayedGames(steamid) {
-    const url = `http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v1/?key=${key}&steamid=${steamid}`;
-    const request = new Request(url);
-    const response = await fetch(request);
-    const data = await response.json();
-    return data;
-}
-
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const steamid = document.querySelector("#steamid").value;
-    GetPlayerSummaries(steamid).then((data) => {
-        username.innerHTML = data.response.players[0].personaname;
-        avatar.src = data.response.players[0].avatarfull;
-    });
-});
+    // fetch the API
+    fetch('https://icanhazdadjoke.com', setHeader)
+        // convert the response to json
+        .then((res) => res.json())
+        // output the joke
+        .then((data) => {
+            joke.innerHTML = data.joke;
+        })
+        // catch errors
+        .catch((error) => {
+            console.log(error);
+        });
+    // output student number
+    studentNumber.innerHTML = 'Merik de Vree 200462061';
+};

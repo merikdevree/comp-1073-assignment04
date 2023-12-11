@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Steam Games Getter Thing</title>
+        <title>Random Dad Jokes</title>
         <script src="./js/api.js" defer></script>
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
@@ -11,35 +11,15 @@
     <body>
         <div class="container">
             <div class="header">
-                <h1>Steam Games Getter Thing</h1>
+                <h1>Random Dad Joke</h1>
             </div>
             <div class="main">
-                <div class="form">
-                    <form>
-                        <label for="steamid">Steam ID</label>
-                        <input type="text" name="steamid" id="steamid" placeholder="Enter a valid Steam ID" />
-                        <input type="submit" value="Submit" />
-                    </form>
-                </div>
-                <div class="user-profile">
-                    <img id="avatar" src="" alt="" />
-                    <h2 id="username"></h2>
-                </div>
-                <div class="games">
-                    <div class="game">
-                        <img src="http://cdn.akamai.steamstatic.com/steam/apps/362890/header.jpg" alt="" srcset="" />
-                        <h2>Black Mesa</h2>
-                        <p>App ID: 362890</p>
-                        <p>Playtime:</p>
-                        <ul>
-                            <li>332</li>
-                            <li>8916</li>
-                        </ul>
-                    </div>
-                </div>
+                <button>Get a random dad joke</button>
+                <p id="joke"></p>
             </div>
             <div class="footer">
-                <p>Made by <a href=""></a></p>
+                <p id="studentNumber"></p>
+                <p>Built using <a href="https://icanhazdadjoke.com/api">icanhazdadjoke API</a></p>
             </div>
         </div>
     </body>
